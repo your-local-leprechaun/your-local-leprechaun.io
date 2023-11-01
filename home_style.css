@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*
+Author: Luke Wulf
+Date: April 18, 2023
+
+Filename: home_style.css
+
+Unique styles for home page
+*/
+
+
+/*Article*/
+article{
+    clear: both;
+}
+article > div{
+    display: block;
+    text-align: center;
+    color:rgb(225, 225, 225);
+    box-shadow: rgba(0, 0, 0, 0.6) -10px 8px 0px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 50px 10px;
+}
+article > div > p.boxHeading{
+    margin: 10px;
+    font-size: 1.9em;
+    text-shadow: black -5px 5px 0px;
+}
+article > div > p.description{
+    font-size: 1em;
+    text-shadow: black -3px 3px 0px;
+}
+article > div > a{
+    text-decoration: underline;
+    color: rgb(180, 180, 180);
+}
+
+/*Specific Article Boxes*/
+article div.hiBox{
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    padding: 60px 10px 100px 10px;
+    width: 100%;
+    background-image: linear-gradient(darkblue 70%, rgb(25,25,25));
+}
+
+article div.devlogBox{
+    background-color: rgba(179, 0, 255, 0.4);
+}
+
+article div.worksBox{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+article div.djowBox{
+    background-color: rgba(0, 128, 0, 0.4);
+}
+
+article div.aboutBox{
+    background-color: rgba(0, 47, 255, 0.4);
+}
+
+a.boxLink{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 481px){
+
+}
+
+@media only screen and (max-width: 480px){
+    body > header > h1{
+        font-size: 1.8em;
+    }
+    body> div.pardon h3{
+        color: rgb(200, 200, 200);
+        clear: both;
+        font-size: 19px;
+        padding-top: 4%;
+        text-align: center;
+        text-shadow: rgb(255, 0, 0) -2px 2px 8px;
+    }
+}

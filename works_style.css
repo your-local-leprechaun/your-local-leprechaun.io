@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*
+Author: Luke Wulf
+Date: April 22, 2023
+
+Filename: works_style.css
+
+Unique styles for the Works page
+*/
+
+/*Info In the Box*/
+div.gameShow > p.title{
+    padding: 8px 8px;
+    font-size: 18px;
+}
+div.gameShow > p.status{
+    padding: 5px 8px;
+    font-size: 12px;
+}
+div.gameShow > p.description{
+    padding: 5px 15px;
+    font-size: 13px;
+    line-height: 25px;
+}
+div.gameShow > a{
+    display: block;
+}
+div.gameShow > a > img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+}
+body > article > h3{
+    display: none;
+}
+
+div.gameShow{
+    box-shadow: rgba(0, 0, 0, 0.773) -7px 7px 3px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/*Computer*/
+@media only screen and (min-width: 481px){
+
+    /*Game Show Box*/
+    div.gameShow{
+        float: left;
+        width: 30%;
+        margin: 11px;
+    }
+
+    div.row{
+        display: block;
+        margin: 10px auto;
+        clear: both;
+    }
+
+    /*Box Specific Information*/
+    div.irishClicker{
+        background-color: rgb(0, 128, 0);
+    }
+    div.blockedIn{
+        background-color: rgb(213, 0, 0);
+    }
+    div.tenzi{
+        background-color: rgb(49, 49, 49);
+    }
+    div.zombieShoot{
+        background-color: rgb(50, 50, 192);
+    }
+    div.comingSoon{
+        background-color: rgb(35, 35, 35);
+    }
+}
+
+/*Phone*/
+@media only screen and (max-width: 480px){
+
+    body > article > h3{
+        display: block;
+        text-align: center;
+        margin: 15px 8px;
+        font-size: 19px;
+    }
+    div.gameShow{
+        width: 90%;
+        margin: 20px auto;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    /*Box Specific Information*/
+    div.blockedIn{
+        background-color: rgb(213, 0, 0);
+    }
+    div.irishClicker{
+        background-color: rgb(0, 128, 0);
+    }
+    div.tenzi{
+        background-color: rgb(49, 49, 49);
+    }
+    div.zombieShoot{
+        background-color: rgb(50, 50, 192);
+    }
+}
